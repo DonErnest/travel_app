@@ -24,3 +24,7 @@ class DepartureLocation {
     );
   }
 }
+
+final departureCenter = DepartureLocation(name: "Остановка Московская Тыныстанова", description: "Точка сбора - магазин Берекет на пер. Московской и Тыныстанова");
+final departureSouth = DepartureLocation(name: "Остановка Южные ворота", description: "Точка сбора - парк Южные ворота");
+final departureEast = DepartureLocation(name: "Остановка БЦ Victory", description: "Точка сбора - сквер Победы у БЦ Victory");

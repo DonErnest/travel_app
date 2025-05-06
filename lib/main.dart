@@ -4,6 +4,7 @@ import 'package:travel_app/app_routes.dart';
 import 'package:travel_app/providers/journey_provider.dart';
 import 'package:travel_app/providers/participation_provider.dart';
 import 'package:travel_app/providers/user_provider.dart';
+import 'package:travel_app/screens/journey_detail.dart';
 import 'package:travel_app/screens/journeys.dart';
 import 'package:travel_app/screens/login.dart';
 import 'package:travel_app/screens/not_found_screen.dart';
@@ -20,7 +21,7 @@ void main() {
          AppRoutes.login: (ctx) => LoginScreen(),
          AppRoutes.userSettings: (ctx) => Placeholder(),
          AppRoutes.journeys: (ctx) => JourneysList(),
-         AppRoutes.journeyDetail: (ctx) => Placeholder(),
+         AppRoutes.journeyDetail: (ctx) => JourneyDetailed(),
          AppRoutes.participation: (ctx) => Placeholder(),
        },
        initialRoute: AppRoutes.login,
