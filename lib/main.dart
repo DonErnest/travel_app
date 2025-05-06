@@ -8,6 +8,9 @@ import 'package:travel_app/screens/journey_detail.dart';
 import 'package:travel_app/screens/journeys.dart';
 import 'package:travel_app/screens/login.dart';
 import 'package:travel_app/screens/not_found_screen.dart';
+import 'package:travel_app/screens/participation.dart';
+import 'package:travel_app/theme/dark_theme.dart';
+import 'package:travel_app/theme/light_theme.dart';
 
 void main() {
   runApp(
@@ -17,12 +20,14 @@ void main() {
       ChangeNotifierProvider(create: (ctx) => ParticipationProvider()),
     ],
      child: MaterialApp(
+       theme: lightTheme,
+       darkTheme: darkTheme,
        routes: {
          AppRoutes.login: (ctx) => LoginScreen(),
          AppRoutes.userSettings: (ctx) => Placeholder(),
          AppRoutes.journeys: (ctx) => JourneysList(),
          AppRoutes.journeyDetail: (ctx) => JourneyDetailed(),
-         AppRoutes.participation: (ctx) => Placeholder(),
+         AppRoutes.participation: (ctx) => ParticipationScreen(),
        },
        initialRoute: AppRoutes.login,
        title: "Travel across our wonderful country",
